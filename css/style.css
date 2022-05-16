@@ -395,6 +395,13 @@ div i {
 .buy:hover{
     cursor: pointer;
 }
+.border{
+    border-top: 1px solid grey;
+    width: 15%;
+    color: grey;
+    margin-bottom: 30px;
+}
+
 .label .l-span{
     margin: 50px 0px 50px 0px;
 }
