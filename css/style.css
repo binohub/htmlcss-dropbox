@@ -23,9 +23,13 @@ body {
     /*todo justify-content:; */
     /*todo align-items: ; */
     /* background-color: red; */
-    padding: 30px 200px;
+    padding: 30px 100px;
     font-weight: 900;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .c1-row-header:hover
@@ -39,23 +43,16 @@ body {
 .c1-row
 /* ###### CONTAINER-1-ROW ###### */
     {
-    max-width: 1200px;
-    margin: 100px auto;
-    /* display: flex; */
-    /*todo justify-content:; */
-    /*todo align-items: ; */
-
-}
-
-.c1-row-table
-/* ###### CONTAINER-1-ROW ###### */
-    {
-    max-width: 1200px;
-    margin: 100px auto;
+    padding: 30px 100px;
     display: flex;
-    /*todo justify-content:; */
-    /*todo align-items: ; */
-
+    flex-direction: column;
+    align-items: center;
+}
+.c1-row-table
+{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .c1-column
@@ -116,9 +113,9 @@ body {
 }
 
 /*? ##### WIDTH ##### */
-.w-10 
+.w-15
 {
-    width: 10%;
+    width: 15%;
 }
 
 .w-20 
@@ -255,8 +252,8 @@ ul li *
 
 .jumbo img {
     position: absolute;
-    width: 600px;
-    top: 150px;
+    width: 400px;
+    top: 200px;
     left: 700px;
     /* max-width: 1200px; */
     /* margin: 0 auto; */
@@ -300,26 +297,122 @@ div i {
 }
 .c1-row .radiobutton
 {
-    padding: 60px 0;
+    padding-top: 60px;
     font-weight: 900;
     font-size: 1.2rem;
 }
 
 .label
 {
-
+    border: 1px solid gray;
+    width: 90%;
+    margin: 20px;
+    height: 95vh;
+}
+.label:hover
+{
+    background-color: black;
+    color: white;
 }
 
 .top-label
 {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 10px 0px;
+}
 
+.top-label .far
+{
+    font-size: 20px;
 }
 
 .bottom-label
 {
-
+    padding: 20px;
 }
 
+.bottom-label a
+{
+    text-decoration: none;
+}
+
+.bottom-label ul
+{
+    list-style: none;
+}
+
+.label .l-profession{
+    margin: 30px 0px 20px 0px;
+}
+.label .l-price{
+    margin: 0px 0px 20px 0px;
+}
+.label .l-duration{
+    color: hsl(209deg 10% 52%);
+    margin: 0px 0px 50px 0px;
+}
+.label span{
+    display: block;
+}
+.label ul{
+   list-style: none;
+   margin-bottom: 60px;
+   
+}
+.label ul li{
+    margin: 0px 0px 20px 0px;
+    font-size: 16px;
+}
+.label ul li:before{
+   padding-right: 3px;
+
+}
+.label ul li.l-information{
+    padding-left: 1.3em;
+ }
+.label ul li.l-user:before{
+    content: "\f007";
+    font-family: FontAwesome;
+}
+.label ul li.l-space:before{
+    content: "\f07b";
+    font-family: FontAwesome;
+}
+.label ul li.l-information:before{
+    content: "\f303";
+    font-family: FontAwesome;
+    margin-left: -1.3em; 
+    width: 1.6em;
+}
+.buy{
+    color:#0061ff;
+    text-decoration: underline;
+}
+.buy:hover{
+    cursor: pointer;
+}
+.label .l-span{
+    margin: 50px 0px 50px 0px;
+}
+.label a.btn{   
+    width: 100%;
+    display: block;
+    text-align:center;
+}
+.label h3{
+    margin-bottom: 20px;
+}
+.label .l-bonus li:before{
+    content: "\f00c";
+    color: #0061ff;
+    font-family: FontAwesome;
+    padding-right: 3px;
+  
+}
 
 
 /*! ##### FOOTER ###### */
