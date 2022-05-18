@@ -1,5 +1,4 @@
 /*! ##### GENERICS ##### */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,7 +7,6 @@
 }
 
 body {
-    font-family: 'Comfortaa', cursive;
 }
 
 /*! ###### UTILITY ##### */
@@ -45,8 +43,7 @@ body {
     {
     padding: 30px 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* background-color: red; */
 }
 .c1-row-table
 {
@@ -56,15 +53,13 @@ body {
 }
 
 .c1-column
-
-/* ###### CONTAINER-1-COLUMN ###### */
+/* ###### CONTAINER-1-ROW ###### */
     {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px 100px;
     display: flex;
     flex-direction: column;
-    /*todo justify-content:; */
-    /*todo align-items: ; */
+    align-items: center;
+    /* background-color: red; */
 }
 /* ###### FIXED ###### */
 .fixed{
@@ -82,7 +77,6 @@ body {
 {
     display: inline-block;
     height: 40px;
-    background-color: #0061ff;
     padding: 2px 10px;
     margin: 20px 0px;
     text-align: center;
@@ -106,10 +100,29 @@ body {
     color: white;
 }
 
+.white-btn 
+{
+    background-color: white;
+    border: 1px solid black;
+}
+.blue-btn 
+{
+    background-color: #0061ff;
+}
+
+
 .btn:hover 
 {
     color: white;
     filter: brightness(80%);
+    cursor: pointer;
+}
+
+.white-btn:hover
+{
+    color: black;
+    filter: brightness(80%);
+    cursor: pointer;
 }
 
 /*? ##### WIDTH ##### */
@@ -128,9 +141,14 @@ body {
     width: 30%;
 }
 
-.w-45 
+.w-40 
 {
-    width: 45%;
+    width: 40%;
+}
+
+.w-50 
+{
+    width: 50%;
 }
 
 .w-60 
@@ -193,13 +211,15 @@ header:hover ul li *
 /*? ##### ⭐⭐⭐ ##### */
 .th-logo 
 {
-    /* justify-content: flex-end; */
-    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .th-logo img 
 {
     width: 150px;
+    max-height: 50%;
     vertical-align: middle;
 }
 
@@ -291,25 +311,47 @@ div i {
     font-size: 3rem;
 }
 
-.c1-row h2
+
+/*? ##### LABEL ###### */
+.c1-column .l-profession
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-top: 40px;
 }
-.c1-row .radiobutton
+.c1-column .l-enterprise
+{
+    font-size: 1.5rem;
+}
+.radiobutton
 {
     padding-top: 60px;
     font-weight: 900;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .label
 {
     border: 1px solid gray;
-    width: 90%;
-    margin: 20px;
-    height: 95vh;
+    min-width: 300px;
+    margin: 10px;
 }
 .label:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.big-label
+{
+    border: 1px solid gray;
+    width: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    margin: 10px;
+}
+.big-label:hover
 {
     background-color: black;
     color: white;
@@ -328,13 +370,24 @@ div i {
 .top-label .far
 {
     font-size: 20px;
+    margin: 0px 10px;
 }
 
 .bottom-label
 {
     padding: 20px;
 }
-
+.big-label .bottom-label
+{
+    display: flex;
+    justify-content: space-between;
+}
+.big-label .bottom-label .w-20
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 .bottom-label a
 {
     text-decoration: none;
@@ -345,15 +398,20 @@ div i {
     list-style: none;
 }
 
-.label .l-profession{
-    margin: 30px 0px 20px 0px;
+.big-label .l-enterprise{
+    margin: 0px 0px 10px 0px;
+    font-size: 0.8rem;
 }
 .label .l-price{
     margin: 0px 0px 20px 0px;
 }
-.label .l-duration{
-    color: hsl(209deg 10% 52%);
-    margin: 0px 0px 50px 0px;
+.big-label .l-vendite{
+    margin: 0px 0px 40px 0px;
+    font-size: 00.8rem;
+}
+.big-label .l-soluzioni{
+    color: gray;
+    font-size: 0.8rem;
 }
 .label span{
     display: block;
@@ -418,8 +476,53 @@ div i {
     color: #0061ff;
     font-family: FontAwesome;
     padding-right: 3px;
-  
 }
+
+/*? ##### PARTNER ###### */
+
+.img-partner .w-100
+{
+    transition: 1s;
+}
+.img-partner .w-100:hover
+{
+    filter: grayscale(0.5);
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+
+div .p-partner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    transition: 1s;
+}
+div .p-partner:hover
+{
+    transform: scale(1.2);
+}
+
+.p-partner h2
+{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.p-partner p
+{
+    padding-bottom: 20px;
+}
+
+.p-partner span
+{
+    padding-bottom: 20px;
+}
+
+
 
 
 /*! ##### FOOTER ###### */
