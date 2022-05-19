@@ -193,6 +193,10 @@ body {
 {
     font-weight: 900;
 }
+.txt-blue
+{
+    color: #0061ff;
+}
 
 /*! ##### HEADER ###### */
 header 
@@ -548,7 +552,7 @@ div .p-partner:hover
     flex-direction: column;
     justify-content: center;
     min-width: 250px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: calc(100% / 3);
     transition: 1s;
 }
