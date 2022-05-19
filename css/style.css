@@ -53,6 +53,13 @@ body {
     /* width: 60vw;
     margin: auto; */
 }
+.footer-conteiner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
 .c1-row-table
 {
     padding: 30px 100px;
