@@ -654,9 +654,15 @@ div .p-partner:hover
 }
 .hidden{
     margin: 10px 0px  8px 0px;
-    visibility:hidden;
+    visibility: hidden;
 }
-
+.hidden p{
+    color: grey;
+}
+.t-request:hover .hidden
+{
+    visibility: visible;
+}
 
 
 
