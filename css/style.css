@@ -43,6 +43,9 @@ body {
     {
     padding: 30px 100px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* background-color: brown; */
     /* background-color: red; */
 }
 .c1-row-table
@@ -59,7 +62,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    /* background-color: brown; */
     /* background-color: red; */
+}
+.afs
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.jsb
+{
+    display: flex;
+    justify-content: space-between;
 }
 /* ###### FIXED ###### */
 .fixed{
@@ -263,13 +278,11 @@ ul li *
 .bottom-header {
     /* background-image: url("../img/jumbo.png"); */
     background-size: cover;
-    height: 500px;
     display: flex;
     align-items: center;
     /* text-align: center; */
     /* color: white; */
 }
-
 .jumbo img {
     position: absolute;
     width: 400px;
@@ -278,6 +291,7 @@ ul li *
     /* max-width: 1200px; */
     /* margin: 0 auto; */
     /* width: 50%; */
+    transition: 2s;
 }
 
 .jumbo img:hover {
@@ -522,6 +536,37 @@ div .p-partner:hover
     padding-bottom: 20px;
 }
 
+/*? ##### OPERAZION BUSINESS ###### */
+.c1-column h2
+{
+    font-size: 50px;
+
+}
+.img-business
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+    padding-bottom: 50px;
+    width: calc(100% / 3);
+    transition: 1s;
+}
+.img-business:hover
+{
+    transform: scale(1.2);
+}
+.img-drop-business
+{
+    width: 80%;
+}
+
+.img-business h1, p
+{
+    font-size: xx-small;
+    padding-right: 50px;
+    text-align: start;
+}
 
 
 
