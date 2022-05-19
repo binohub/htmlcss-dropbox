@@ -48,6 +48,11 @@ body {
     /* background-color: brown; */
     /* background-color: red; */
 }
+.sc{
+    padding: 30px 100px;
+    /* width: 60vw;
+    margin: auto; */
+}
 .c1-row-table
 {
     padding: 30px 100px;
@@ -150,6 +155,10 @@ body {
 {
     width: 20%;
 }
+.w-25
+{
+    width: 25%;
+}
 
 .w-30 
 {
@@ -180,6 +189,10 @@ body {
 .bg-gray 
 {
     background-color: #f6f6f6;
+}
+.bg-green
+{
+    background-color: green;
 }
 
 /*? ##### PADDING ##### */
@@ -572,7 +585,41 @@ div .p-partner:hover
     text-align: start;
 }
 
+/*? ##### SPONSOR ###### */
+.sponsor{
+    height: 60vh;
+}
+.sponsor .side{
+    width: 30%;
+   
+    height: 100%; 
+}
+.square{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/*? ##### REQUEST ###### */
+
+.request{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.request h1{
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
+}
+.request .t-request{
+    border-bottom: 1px solid grey;
+    margin: 30px 0px 15px 0px;
+    width: 100%;
+}
+.hidden{
+    margin: 10px 0px  8px 0px;
+    visibility:hidden;
+}
 
 /*! ##### FOOTER ###### */
 footer {
